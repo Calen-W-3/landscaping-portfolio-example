@@ -6,9 +6,9 @@ module.exports = {
     address: {
         lineOne: "First Address Line",
         lineTwo: "Second Address Line",
-        city: "Denver",
-        state: "CO",
-        zip: "80206",
+        city: "Texas City",
+        state: "TX",
+        zip: "77510",
         country: "US",
         mapLink: "https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6",
     },

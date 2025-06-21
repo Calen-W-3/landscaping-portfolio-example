@@ -11,52 +11,15 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #hero-143 {
+    #hero-82 {
         /* Centers button */
         text-align: center;
         /* 144px - 300px - leaving extra space for the navigation */
         padding: clamp(9rem, 25.95vw, 18.75rem) (16/16rem) 0;
-        /* 130px - 450px */
-        padding-bottom: clamp(12.125rem, 30.95vw, 28.125rem);
+        /* 130px - 200px */
+        padding-bottom: clamp(8.125rem, 12.5vw, 25em);
         position: relative;
         z-index: 1;
-        /* Prevents white rectangle pseudos from overlapping the sections below */
-        overflow: hidden;
-
-        &:before {
-            /* Left side of the triangle */
-            content: "";
-            width: (500/16rem);
-            /* make really long so it covers the whole screen all the way to desktop */
-            height: (4000/16rem);
-            background: #fff;
-            opacity: 1;
-            transform: rotate(-67deg);
-            transform-origin: center;
-            position: absolute;
-            display: block;
-            bottom: (-2235/16rem);
-            /* this makes the right edge sit at the 50% line at all times */
-            right: 50%;
-            z-index: 0;
-        }
-
-        &:after {
-            /* Right side of the triangle */
-            content: "";
-            width: (500/16rem);
-            height: (4000/16rem);
-            background: #fff;
-            opacity: 1;
-            transform: rotate(67deg);
-            transform-origin: center;
-            position: absolute;
-            display: block;
-            bottom: (-2235/16rem);
-            /* this makes the left edge sit at the 50% line at all times */
-            left: 50%;
-            z-index: 0;
-        }
 
         .cs-background {
             width: 100%;
@@ -72,7 +35,7 @@
                 content: "";
                 width: 100%;
                 height: 100%;
-                background: #000;
+                background: #3b3b3b;
                 opacity: 0.7;
                 position: absolute;
                 display: block;
@@ -95,7 +58,7 @@
 
         .cs-container {
             width: 100%;
-            max-width: (1280/16rem);
+            max-width: (1080/16rem);
             margin: auto;
         }
 
@@ -114,10 +77,8 @@
             &:after {
                 /* Divider Line */
                 content: "";
-                /* 60px - 100px */
-                width: clamp(3.75rem, 9.5vw, 6.25rem);
-                /* 4px - 8px */
-                height: clamp(0.25rem, 0.8vw, 0.5rem);
+                width: (100/16rem);
+                height: (8/16rem);
                 /* 16px - 24px */
                 margin: clamp(1rem, 4vw, 1.5rem) auto clamp(1rem, 4vw, 1.5rem);
                 background: var(--primary);
@@ -140,22 +101,40 @@
             margin-bottom: clamp(2.5rem, 4vw, 3rem);
             color: #fff;
         }
-    }
-}
 
-/* Desktop - 1300px (To make image background parallax) */
-@media only screen and (min-width: 81.25rem) {
-    #hero-143 {
-        background: url("/assets/images/landing.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        /* makes the parallax effect */
-        background-attachment: fixed;
+        .cs-button-solid {
+            font-size: (16/16rem);
+            line-height: (56/16rem);
+            text-decoration: none;
+            font-weight: 700;
+            margin: auto;
+            color: #fff;
+            padding: 0 (24/16rem);
+            background-color: var(--primary);
+            border-radius: (4/16rem);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
 
-        .cs-background {
-            img {
-                display: none;
+            &:before {
+                content: "";
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 0%;
+                background: #000;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                border-radius: (4/16rem);
+                transition: width 0.3s;
+            }
+
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
             }
         }
     }
@@ -164,7 +143,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #hero-143 {
+        #hero-82 {
             &:before,
             &:after {
                 background: var(--dark);
@@ -178,6 +157,8 @@
         }
     }
 }
+                                
+                                
 
 /*-- -------------------------- -->
 <---         Services           -->
@@ -191,6 +172,7 @@
         position: relative;
         /* give a higher z index than the hero so it can sit on top */
         z-index: 10;
+        
 
         .cs-card-group {
             width: 100%;
@@ -202,7 +184,7 @@
             margin-top: ~"calc(clamp(5rem, 13vw, 4.75rem)*-1)";
             /* 40px - 60px top and bottom, 16px - 44px left & right */
             padding: clamp(2.5rem, 4.7vw, 3.75rem) clamp(1rem, 5.3vw, 2.75rem);
-            box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.20);
             border-radius: (5/16rem);
             border-top: 8px solid var(--primary);
             background-color: #fff;
@@ -290,6 +272,7 @@
 /* Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
     #h-services-143 {
+        padding-top: 10rem;
         .cs-card-group {
             max-width: (1280/16rem);
             flex-wrap: nowrap;
@@ -308,8 +291,9 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #h-services-143 {
+              background: var(--darkbgColor);
             .cs-card-group {
-                background: var(--medium);
+                background: var(--darkbgColor);
             }
 
             .cs-icon {
@@ -321,7 +305,7 @@
             }
 
             .cs-text {
-                color: #fff;
+                color: var(--darkBodyTextColor);
             }
         }
     }
