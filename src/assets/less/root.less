@@ -445,7 +445,7 @@ body {
         border: none;
         display: block;
         position: absolute;
-        top: (10/16rem);
+        top: 1.625rem;
         right: (70/16rem);
         z-index: 1000;
         overflow: hidden;
@@ -573,7 +573,7 @@ body {
             z-index: 10;
 
             img {
-                width: 100%;
+                width: 50%;
                 height: 100%;
                 /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
                 object-fit: contain;
@@ -766,7 +766,7 @@ body {
 @media only screen and (max-width: 1023.5px) {
     body.dark-mode {
         #cs-navigation {
-            background-color: var(--dark);
+            background-color: var(--darkbgColor);
 
             .cs-logo {
                 /* makes it white */
@@ -890,6 +890,7 @@ body {
             width: (15/16rem);
             height: auto;
             display: inline-block;
+            filter: brightness(0);
         }
 
         .cs-drop-ul {
