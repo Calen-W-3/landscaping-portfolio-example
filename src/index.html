@@ -97,7 +97,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             <!--Mobile Image-->
             <source media="(max-width: 600px)" srcset="./assets/images/our-company-mow.jpg">
             <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="./assets/images/our-company-mow.jpg">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/our-company-mow.jpg" | resize({ width: 738, height: 598 }) | jpeg %}" type="image/jpeg">
             <img loading="lazy" decoding="async" src="./assets/images/our-company-mow.jpg" alt="construction" width="738" height="598">
         </picture>
         <div class="cs-content">
@@ -161,39 +161,39 @@ At LoneStar Landscaping, we combine expert craftsmanship with a deep respect for
         <div class="cs-gallery">
             <!--Picture 1-->
             <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="./assets/images/gallery/gallery-photo-1.jpg">
-                <source media="(min-width: 601px)" srcset="./assets/images/gallery/gallery-photo-1.jpg">
-                <img loading="lazy" decoding="async" src="./assets/images/gallery/gallery-photo-1.jpg" alt="gallery" width="305" height="400">
+                <source media="(max-width: 600px)" srcset="./assets/images/gallery/gallery-photo-1.webp">
+                <source media="(min-width: 601px)" srcset="./assets/images/gallery/gallery-photo-1.webp">
+                <img loading="lazy" decoding="async" src="./assets/images/gallery/gallery-photo-1.webp" alt="gallery" width="305" height="400">
             </picture>
             <!--Picture 2-->
             <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="./assets/images/gallery/gallery-photo-2.jpg">
-                <source media="(min-width: 601px)"srcset="./assets/images/gallery/gallery-photo-2.jpg">
-                <img loading="lazy" decoding="async" src="./assets/images/gallery/gallery-photo-2.jpg" alt="gallery" width="305" height="400">
+                <source media="(max-width: 600px)" srcset="./assets/images/gallery/gallery-photo-2.webp">
+                <source media="(min-width: 601px)"srcset="./assets/images/gallery/gallery-photo-2.webp">
+                <img loading="lazy" decoding="async" src="./assets/images/gallery/gallery-photo-2.webp" alt="gallery" width="305" height="400">
             </picture>
             <!--Picture 3-->
             <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="./assets/images/gallery/gallery-photo-3.jpg">
-                <source media="(min-width: 601px)" srcset="./assets/images/gallery/gallery-photo-3.jpg">
-                <img loading="lazy" decoding="async" src="./assets/images/gallery/gallery-photo-3.jpg" alt="gallery" width="305" height="400">
+                <source media="(max-width: 600px)" srcset="./assets/images/gallery/gallery-photo-3.webp">
+                <source media="(min-width: 601px)" srcset="./assets/images/gallery/gallery-photo-3.webp">
+                <img loading="lazy" decoding="async" src="./assets/images/gallery/gallery-photo-3.webp" alt="gallery" width="305" height="400">
             </picture>
             <!--Picture 4-->
             <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="./assets/images/gallery/gallery-photo-4.jpg">
-                <source media="(min-width: 601px)" srcset="./assets/images/gallery/gallery-photo-4.jpg">
-                <img loading="lazy" decoding="async" src="./assets/images/gallery/gallery-photo-14jpg" alt="gallery" width="305" height="400">
+                <source media="(max-width: 600px)" srcset="./assets/images/gallery/gallery-photo-4.webp">
+                <source media="(min-width: 601px)" srcset="./assets/images/gallery/gallery-photo-4.webp">
+                <img loading="lazy" decoding="async" src="./assets/images/gallery/gallery-photo-4.webp" alt="gallery" width="305" height="400">
             </picture>
             <!--Picture 5-->
             <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="./assets/images/gallery/gallery-photo-5.jpg">
-                <source media="(min-width: 601px)" srcset="./assets/images/gallery/gallery-photo-5.jpg">
-                <img loading="lazy" decoding="async" src="./assets/images/gallery/gallery-photo-5.jpg" alt="gallery" width="305" height="400">
+                <source media="(max-width: 600px)" srcset="./assets/images/gallery/gallery-photo-5.webp">
+                <source media="(min-width: 601px)" srcset="./assets/images/gallery/gallery-photo-5.webp">
+                <img loading="lazy" decoding="async" src="./assets/images/gallery/gallery-photo-5.webp" alt="gallery" width="305" height="400">
             </picture>
             <!--Picture 6-->
             <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="./assets/images/gallery/gallery-photo-6.jpg">
-                <source media="(min-width: 601px)" srcset="./assets/images/gallery/gallery-photo-6.jpg">
-                <img loading="lazy" decoding="async" src="./assets/images/gallery/gallery-photo-6.jpg" alt="gallery" width="305" height="400">
+                <source media="(max-width: 600px)" srcset="./assets/images/gallery/gallery-photo-6.webp">
+                <source media="(min-width: 601px)" srcset="./assets/images/gallery/gallery-photo-6.webp">
+                <img loading="lazy" decoding="async" src="./assets/images/gallery/gallery-photo-6.webp" alt="gallery" width="305" height="400">
             </picture>
         </div>
     </div>
